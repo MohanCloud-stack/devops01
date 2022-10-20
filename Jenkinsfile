@@ -4,6 +4,10 @@ pipeline {
     registryCredential = '@@##$$%%Alpha8727'
     dockerImage = ''
   }
+
+withCredentials([gitUsernamePassword(credentialsId: 'ae8c5da9-acc2-4934-96c5-d770aa0cc442', gitToolName: 'git-tool')]) {
+  sh 'git fetch --all'
+}
   agent any
   stages {
     stage('CloningGit') {
