@@ -6,10 +6,17 @@ pipeline {
   }
  agent any
   stages {
-    stage('CloningGit') {
+    
+    stage('Adding the credenital'){
+        steps{
     withCredentials([gitUsernamePassword(credentialsId: 'ae8c5da9-acc2-4934-96c5-d770aa0cc442', gitToolName: 'git-tool')]) {
         sh 'git fetch --all'
-       }
+        }
+        }
+    }
+
+
+    stage('CloningGit') {
       steps {
         git 'https://github.com/MohanCloud-stack/devops01.git'
       }
