@@ -6,7 +6,7 @@ pipeline {
   }
   agent any
   stages {
-    stage('Cloning Git') {
+    stage('CloningGit') {
       steps {
         git 'https://github.com/MohanCloud-stack/devops01.git'
       }
