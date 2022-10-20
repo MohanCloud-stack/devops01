@@ -1,12 +1,12 @@
 pipeline {
-  agent any
   environment {
     registry = "devopsmohan/mernapp"
     registryCredential = '@@##$$%%Alpha8727'
     dockerImage = ''
   }
+  agent any
   stages {
-    stage('Cloning Git') {
+    stage('CloningGit') {
       steps {
         git 'https://github.com/MohanCloud-stack/devops01.git'
       }
