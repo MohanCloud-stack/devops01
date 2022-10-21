@@ -1,7 +1,7 @@
 pipeline {
   environment {
-    registry = "devopsmohan/mernapp"
-    registryCredential = "@@##$$%%Alpha8727"
+    registry ='devopsmohan/mernapp'
+    registryCredential ='@@##$$%%Alpha8727'
     dockerImage = ''
   }
  agent any
@@ -14,7 +14,7 @@ pipeline {
     }
     stage('Build') {
        steps {
-         sh ' sudo  docker build -t mernapp .'
+         sh 'docker build -t mernapp .'
        }
     }
     stage('Building image') {
