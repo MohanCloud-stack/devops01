@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    registry ='https://hub.docker.com/repository/docker/devopsmohan/mernapp'
+    registry ='devopsmohan/mernapp'
     registryCredential ='devopsmohan'
     dockerImage = ''
   }
