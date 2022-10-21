@@ -14,7 +14,7 @@ pipeline {
     }
     stage('Build') {
        steps {
-         sh 'docker build -t mernapp .'
+         sh ' sudo  docker build -t mernapp .'
        }
     }
     stage('Building image') {
