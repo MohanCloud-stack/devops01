@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    registry ='https://index.docker.io/v1/'
+    registry ='https://hub.docker.com/'
     registryCredential ='devopsmohan'
     dockerImage = ''
   }
