@@ -1,7 +1,7 @@
 pipeline {
   environment {
     registry ='devopsmohan/mernapp'
-    registryCredential ='@@##$$%%Alpha8727'
+    registryCredential ='devopsmohan'
     dockerImage = ''
   }
  agent any
