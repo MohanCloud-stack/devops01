@@ -27,7 +27,7 @@ pipeline {
     stage('Deploy Image') {
       steps{
          script {
-            docker.withRegistry( '', registryCredential ) {
+            withDockerRegistry(credentialsId: 'devopsmohan', url: 'https://hub.docker.com/') {
             dockerImage.push()
           }
         }
