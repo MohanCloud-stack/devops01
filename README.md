@@ -5,7 +5,7 @@
 [![Node CI](https://github.com/MohanCloud-stack/devops/actions/workflows/main.yml/badge.svg)](https://github.com/MohanCloud-stack/devops/actions/workflows/main.yml)
 
 ### Docker Hub Register image
-docker push devopsmohan/mernapp:tagname
+docker pull devopsmohan/mernapp:tagname
 
 # Getting Started with Create React App
 
