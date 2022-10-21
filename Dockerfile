@@ -2,6 +2,6 @@ FROM node:latest
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 COPY package*.json ./
-RUN npm install
+RUN npm -g install npm@6.14.14
 COPY . .
 CMD ["npm","start"]
