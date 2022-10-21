@@ -3,6 +3,7 @@ pipeline {
     registry = "devopsmohan/mernapp"
     registryCredential = '@@##$$%%Alpha8727'
     dockerImage = ''
+    git branch: 'main', credentialsId: 'a3e81212-a3f5-45de-9b8e-cc86d8437a2d', url: 'https://github.com/MohanCloud-stack/devops01.git'
   }
  agent any
   stages {
