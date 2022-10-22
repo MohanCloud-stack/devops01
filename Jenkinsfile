@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    registry ='devopsmohan/mernapp'
+    registry ='devopsmohan/mernapp1'
     registryCredential ='devopsmohan'
     dockerImage = ''
   }
@@ -13,7 +13,7 @@ pipeline {
     }
     stage('Build') {
        steps {
-         sh 'docker build -t mernapp .'
+         sh 'docker build -t mernapp1 .'
        }
     }
     stage('Building image') {
